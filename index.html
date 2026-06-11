@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Sustentável - O Exemplo do Paraná</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="animado-topo">
+        <div class="container">
+            <h1>Agro Sustentável PR</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início & História</a></li>
+                    <li><a href="calculadora.html">Calculadora de Impacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero pr-hero">
+            <div class="hero-content">
+                <h2>Paraná: O Berço da Sustentabilidade Agrícola</h2>
+                <p>Do pioneirismo no Plantio Direto à revolução do Biogás no Oeste.</p>
+                <a href="#historia" class="btn animado-btn">Conheça nossa História</a>
+            </div>
+        </section>
+
+        <section id="historia" class="texto-longo container">
+            <h2>A Força da Terra das Araucárias</h2>
+            <p>O estado do Paraná é historicamente reconhecido como um dos grandes celeiros do Brasil, mas seu maior orgulho não é apenas o volume de produção, e sim a <strong>forma como produz</strong>. A conscientização ambiental começou cedo nas terras vermelhas e férteis da região.</p>
+            
+            <h3>O Pioneirismo no Plantio Direto</h3>
+            <p>Na década de 1970, a erosão ameaçava destruir os solos ricos do Norte do Paraná. Foi em cidades como Rolândia e Mauá da Serra que agricultores visionários implementaram o Sistema de Plantio Direto (SPD) no Brasil. Em vez de arar a terra, eles deixavam a palha da colheita anterior cobrindo o solo. Essa técnica revolucionária reteve a umidade, evitou que a terra fosse levada pelas chuvas e transformou o Paraná em um modelo global de conservação de solos.</p>
+            
+            <h3>A Força do Cooperativismo e da Energia</h3>
+            <p>O agronegócio paranaense é movido pelo sistema de cooperativas, um dos mais fortes do mundo. Esse modelo permitiu que pequenos e médios produtores tivessem acesso a tecnologias de ponta. Hoje, impulsionado por parcerias com instituições como a Itaipu Binacional, o Paraná lidera a transição energética no campo. Os resíduos da gigantesca produção de suínos e aves, principalmente no Oeste, deixaram de ser um passivo ambiental para se tornarem a principal fonte de biogás do país.</p>
+        </section>
+
+        <section id="mapa-interativo" class="container">
+            <h2>Mapa Interativo: O Agro por Regiões do PR</h2>
+            <p>Clique nas regiões para descobrir o que faz cada área do Paraná ser um destaque em sustentabilidade.</p>
+            
+            <div class="mapa-grid">
+                <button class="btn-regiao animado-btn" onclick="mostrarRegiao('oeste')">Oeste (Biogás)</button>
+                <button class="btn-regiao animado-btn" onclick="mostrarRegiao('norte')">Norte (Solos)</button>
+                <button class="btn-regiao animado-btn" onclick="mostrarRegiao('campos')">Campos Gerais (Leite/Tecnologia)</button>
+                <button class="btn-regiao animado-btn" onclick="mostrarRegiao('sul')">Sul (Florestas/Erva-Mate)</button>
+            </div>
+
+            <div id="info-regiao" class="painel-info">
+                <h3>Selecione uma região acima</h3>
+                <p>As curiosidades e detalhes aparecerão aqui.</p>
+            </div>
+        </section>
+
+        <section class="curiosidades container">
+            <h2>Você Sabia? (Curiosidades Paranaenses)</h2>
+            <ul>
+                <li><strong>O Paraná e o Biogás:</strong> O estado concentra o maior número de plantas de biogás da região Sul, transformando dejetos de porcos em eletricidade e combustível para tratores.</li>
+                <li><strong>Araucárias Protegidas:</strong> Muitos produtores rurais integram a criação de gado com a preservação de florestas nativas de Araucária, garantindo a biodiversidade.</li>
+                <li><strong>Certificação:</strong> O Paraná é reconhecido internacionalmente como área livre de febre aftosa sem vacinação, um reflexo do alto rigor sanitário e sustentável de seus rebanhos.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Projeto Agro Sustentável PR.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

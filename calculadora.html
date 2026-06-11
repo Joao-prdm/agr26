@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Impacto PR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="animado-topo">
+        <div class="container">
+            <h1>Agro Sustentável PR</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início & História</a></li>
+                    <li><a href="calculadora.html">Calculadora de Impacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-calc">
+        <h2>Calculadora de Impacto Sustentável do Paraná</h2>
+        <p>Baseado nos dados do agronegócio paranaense, descubra como pequenas ações geram grandes impactos energéticos e ambientais.</p>
+
+        <div class="calc-box">
+            <h3>Simulador de Biogás (Suinocultura)</h3>
+            <p>No Oeste do PR, os dejetos suínos viram energia limpa. Digite a quantidade de suínos na propriedade:</p>
+            <input type="number" id="qtdSuinos" placeholder="Ex: 500" min="0">
+            <button class="btn animado-btn" onclick="calcularBiogas()">Calcular Energia</button>
+            <div id="resultado-biogas" class="resultado"></div>
+        </div>
+
+        <div class="calc-box">
+            <h3>Sequestro de Carbono (Plantio Direto)</h3>
+            <p>O Plantio Direto evita a liberação de CO2. Digite quantos hectares são cultivados usando essa técnica:</p>
+            <input type="number" id="qtdHectares" placeholder="Ex: 100" min="0">
+            <button class="btn animado-btn" onclick="calcularCarbono()">Calcular CO2 Evitado</button>
+            <div id="resultado-carbono" class="resultado"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Projeto Agro Sustentável PR.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
